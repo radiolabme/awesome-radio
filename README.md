@@ -44,6 +44,10 @@
 
 ### SPE Expert Amplifiers
 
+- [SPE Expert](https://www.spe-expert.com) - Manufacturer of the Expert 1.3K-FA and related solid-state amplifiers; manuals and firmware updates available.
+- [SPE Expert 1.3K-FA Manual](https://www.spe-expert.com/wp-content/uploads/2020/01/Expert_1.3K-FA_Manual.pdf) - Full operator manual covering serial CAT interface, automation inputs, and band-data connector pinout.
+- [SPE Support Forum](https://www.spe-expert.com/forum/) - Official forum with firmware announcements and operator-contributed automation scripts.
+
 ### Elecraft Amplifiers and Tuners
 
 ### SteppIR Antennas
