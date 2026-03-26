@@ -37,6 +37,11 @@
 
 ### Elecraft
 
+- [Elecraft](https://www.elecraft.com) - Manufacturer of the K3, KX2, and related accessories; documentation and firmware downloads available.
+- [elecraft-docs](https://github.com/radiolabme/elecraft-docs) - Curated technical documentation, automation notes, and configuration references for Elecraft K3 and KX2 operators.
+- [Elecraft Mailing List Archives](https://mailman.qth.net/pipermail/elecraft/) - Decades of operator experience, modification tips, and troubleshooting in searchable archive form.
+- [K3 Programmer](https://www.k3programmer.com) - Third-party configuration and band-data management tool for the Elecraft K3 and K3S.
+
 ### SPE Expert Amplifiers
 
 ### Elecraft Amplifiers and Tuners
