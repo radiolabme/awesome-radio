@@ -134,6 +134,15 @@
 
 ## GitHub Projects
 
+- [Hamlib](https://github.com/Hamlib/Hamlib) - The standard open-source library for rig and rotator control; supports hundreds of radios via a unified API used by nearly every ham automation tool.
+- [flrig](https://github.com/w1hkj/flrig) - Rig control front-end from the fldigi suite; lightweight, cross-platform, and paired tightly with fldigi for digital mode use.
+- [Band Decoder MK2](https://github.com/ok1rr/BandDecoderMK2) - Arduino-based band decoder reading CAT frequency and driving antenna switch, amp band-data, and SteppIR controller outputs.
+- [SDRangel](https://github.com/f4exb/sdrangel) - Full-featured SDR transceiver application with Flex SmartSDR protocol support and an extensive signal processing plugin ecosystem.
+- [SoapySDR](https://github.com/pothosware/SoapySDR) - Hardware abstraction layer enabling SDR software to support many different hardware backends through a common API.
+- [OpenEMS](https://github.com/thliebig/openEMS) - FDTD electromagnetic field solver for antenna and RF structure simulation beyond NEC's wire-antenna scope.
+- [pyhamtools](https://github.com/dh1tw/pyhamtools) - Python library for callsign lookup, log analysis, grid square calculations, and other common ham radio data operations.
+- [ham2mon](https://github.com/madengr/ham2mon) - SDR-based multi-channel scanner and recorder for monitoring amateur and public safety bands.
+
 ---
 
 ## Logging and Contesting
