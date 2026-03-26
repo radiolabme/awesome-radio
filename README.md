@@ -110,6 +110,14 @@
 
 ## SDR and Signal Processing
 
+- [SDR++](https://www.sdrpp.org) - Cross-platform SDR receiver with a clean interface, broad hardware support (RTL-SDR, HackRF, Airspy, LimeSDR), and a plugin architecture.
+- [SDRangel](https://github.com/f4exb/sdrangel) - Qt-based SDR and signal analyzer with transmit capability, extensive plugin ecosystem, and support for Flex radios via SmartSDR protocol.
+- [GQRX](https://gqrx.dk) - GNU Radio-based SDR receiver with a straightforward interface; well-suited for spectrum monitoring and audio demodulation on Linux and macOS.
+- [CubicSDR](https://cubicsdr.com) - Cross-platform SDR application built on liquid-dsp and SoapySDR; integrates with Flex radios via IQ data.
+- [GNU Radio](https://www.gnuradio.org) - Open-source signal processing toolkit and flow-graph development environment used to build custom SDR applications, demodulators, and analysis tools.
+- [SoapySDR](https://github.com/pothosware/SoapySDR) - Vendor-neutral hardware abstraction layer for SDR devices; the common substrate used by SDR++, CubicSDR, and many other applications to support multiple hardware backends.
+- [RTL-SDR Blog](https://www.rtl-sdr.com) - Extensive tutorials, software guides, and project write-ups covering RTL-SDR and a wide range of SDR applications.
+
 ---
 
 ## Digital Modes
