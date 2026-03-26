@@ -1,0 +1,19 @@
+name: awesome_bot
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  awesome_bot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run awesome_bot
+        uses: dkhamsing/awesome_bot@v2
+        with:
+          args: README.md --allow-redirect --allow-dupe --white-list https://awesome.re
