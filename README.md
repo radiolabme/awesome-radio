@@ -147,6 +147,14 @@
 
 ## Logging and Contesting
 
+- [N1MM+ Logger](https://n1mmwireless.com) - The most widely used Windows contest logging application; supports SO2R, deep CAT integration, and band-data relay for amplifier and antenna automation.
+- [Logger32](https://www.logger32.net) - Feature-rich DX logging application with multi-rig CAT control, DX cluster integration, and relay-based antenna switching outputs.
+- [DXLab Suite](https://www.dxlabsuite.com) - Integrated suite of Windows applications covering logging, propagation, DX spotting, rig control, and antenna rotator management.
+- [Log4OM](https://www.log4om.com) - Modern cross-platform amateur radio logging application with built-in DX cluster, LOTW/eQSL integration, and CAT rig control.
+- [LOTW (Logbook of the World)](https://lotw.arrl.org) - ARRL's electronic QSL and award confirmation system; the standard for DXCC, WAS, and most major award tracking.
+- [ClubLog](https://clublog.org) - Web-based log upload and analysis platform with OQRS (online QSL request), DX expedition log search, and propagation statistics.
+- [eQSL](https://eqsl.cc) - Electronic QSL card exchange network accepted for some awards programs; an alternative to paper QSLs with fast confirmations.
+
 ---
 
 ## Licensing and Learning
