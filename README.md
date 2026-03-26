@@ -28,6 +28,13 @@
 
 ### Flex 6400M and SmartSDR
 
+- [FlexRadio Systems](https://www.flexradio.com) - Manufacturer of the Flex 6400M and SmartSDR software-defined radio platform.
+- [FlexRadio Community Forums](https://community.flexradio.com) - Official community forums covering SmartSDR, API usage, hardware, and station integration.
+- [SmartSDR API Documentation](https://documentation.flexradio.com) - Official REST and TCP API reference for programmatic control of SmartSDR-based radios.
+- [SmartSDR for Mac](https://www.flexradio.com/ssdr-for-mac/) - Native macOS client for SmartSDR, with DAX audio routing and CAT support.
+- [DAX (Digital Audio eXchange)](https://www.flexradio.com/downloads/) - Virtual audio routing layer for SmartSDR enabling integration with logging, digital mode, and audio processing software.
+- [SmartLink](https://www.flexradio.com/smartlink/) - Remote access system allowing full SmartSDR operation over the internet with low latency.
+
 ### Elecraft
 
 ### SPE Expert Amplifiers
