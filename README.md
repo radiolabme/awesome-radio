@@ -50,6 +50,11 @@
 
 ### Elecraft Amplifiers and Tuners
 
+- [KPA500 Operator's Manual](https://www.elecraft.com/Downloads/KPA500%20Ops%20Manual.pdf) - Serial interface reference and automation pinout for the Elecraft KPA500 solid-state amplifier.
+- [KAT500 Operator's Manual](https://www.elecraft.com/Downloads/KAT500%20Ops%20Manual.pdf) - Serial control protocol and automation notes for the Elecraft KAT500 automatic antenna tuner.
+- [KPA1500 Operator's Manual](https://www.elecraft.com/Downloads/KPA1500%20Ops%20Manual.pdf) - Serial and Ethernet interface documentation for the Elecraft KPA1500 amplifier, useful reference for KPA500 operators.
+- [Elecraft Programmer's Reference](https://www.elecraft.com/Downloads/K3%20Programmer's%20Reference.pdf) - Comprehensive CAT command reference covering K3, KPA500, KAT500, and accessory control.
+
 ### SteppIR Antennas
 
 ### Multi-Rig Integration and Control
