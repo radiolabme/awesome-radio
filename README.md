@@ -78,11 +78,33 @@
 
 ### Verticals and Phased Arrays
 
+- [ON4UN's Low-Band DXing](https://www.qth.com/on4un/) - The definitive reference for low-band vertical and phased array design, modeling, and installation.
+- [DX Engineering Phased Array Systems](https://www.dxengineering.com/techarticles/DXE-TECH-PHASED.pdf) - Technical overview of two-element phased vertical arrays with practical construction details.
+- [4O3A Antenna Systems](https://www.4o3a.com) - Operator-authored resources on high-performance vertical and beam antenna systems with real-world measurement data.
+- [The ARRL Antenna Book](https://www.arrl.org/arrl-antenna-book) - Comprehensive reference covering vertical, wire, and phased array antennas with modeling examples.
+
 ### Chokes and Common-Mode Current
+
+- [W8JI Choke and Common-Mode Resources](https://www.w8ji.com/common_mode_current.htm) - Tom Rauch's deeply researched pages on common-mode current, choke design, and RF grounding — among the most cited practical references on the subject.
+- [K9YC RFI, Ferrites, and Common Mode Chokes](http://audiosystemsgroup.com/RFI-Ham.pdf) - Jim Brown's comprehensive guide to ferrite materials, choke construction, and common-mode suppression for ham stations.
+- [Palomar Engineers Ferrite Toroid Calculator](https://www.palomar-engineers.com/ferrite-toroids/ferrite-toroid-design-calculator/) - Online calculator for choke impedance given core material, winding count, and frequency.
+- [Fair-Rite Ferrite Products](https://www.fair-rite.com) - Primary ferrite core manufacturer; datasheets and material characteristic curves for Mix 31, 43, 61, and 75 used in ham choke construction.
+- [Ugly Balun / Choke Construction](https://www.w8ji.com/ugly_balun.htm) - W8JI's measured analysis of the common "ugly balun" feedline choke showing when it works and when it fails.
 
 ### Feedline Selection and Loss
 
+- [Times Microwave LMR Cable](https://www.timesmicrowave.com/lmr) - Industry-standard flexible coaxial cable; manufacturer's loss tables and technical specifications for LMR-400, LMR-600, and LMR-900 series.
+- [The Cable Company Coax Loss Calculator](https://www.timesmicrowave.com/calculator) - Times Microwave online tool for calculating dB loss at frequency for all LMR cable types by run length.
+- [DX Engineering RG-6 and Hardline Resources](https://www.dxengineering.com/search/department/coaxial-cable) - Commercial-grade feedline options including CATV hardline adaptations popular for high-power installations.
+- [VK1OD Transmission Line Details](https://owenduffy.net/calc/tld.htm) - Owen Duffy's online transmission line calculator covering matched and mismatched loss, SWR, and impedance transformation.
+
 ### Antenna Modeling
+
+- [4nec2](https://www.qsl.net/4nec2/) - Free Windows NEC2/NEC4 antenna modeling application with a visual geometry editor and far-field pattern display; the most accessible entry point for numerical antenna modeling.
+- [EZNEC](https://eznec.com) - Roy Lewallen's widely used Windows antenna modeling program based on NEC2; supports up to 500 wires and is standard for most published amateur antenna designs.
+- [OpenEMS](https://www.openems.de) - Open-source finite-difference time-domain (FDTD) electromagnetic field solver; handles complex structures including coax feeds, shields, and PCB antennas beyond NEC's wire-only limitations.
+- [MMANA-GAL](http://gal-ana.de/basicmm/en/) - Free antenna modeling software based on the moment method, popular for its simple interface and good accuracy for wire antennas.
+- [Antenna Model](https://www.antennamodel.com) - Commercial NEC-based modeling application with an active developer, good for EZNEC users seeking an alternative with updated NEC4 support.
 
 ---
 
