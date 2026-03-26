@@ -64,6 +64,14 @@
 
 ### Multi-Rig Integration and Control
 
+- [Hamlib](https://hamlib.github.io) - Open-source radio control library providing a unified API for dozens of transceivers and rotators; the backbone of most amateur radio automation software.
+- [rigctld](https://manpages.ubuntu.com/manpages/jammy/man8/rigctld.8.html) - Network daemon from Hamlib exposing rig control over TCP; enables multiple applications to share control of one radio simultaneously.
+- [flrig](https://sourceforge.net/projects/fldigi/files/flrig/) - Lightweight rig control application from the fldigi suite; pairs with fldigi and supports band/mode/frequency automation.
+- [N1MM+ Logger](https://n1mmwireless.com) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
+- [Logger32](https://www.logger32.net) - Full-featured DX logging application with multi-rig CAT control, cluster integration, and antenna switching relay outputs.
+- [OmniRig](http://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
+- [Band Decoder MK2](https://github.com/ok1rr/BandDecoderMK2) - Open-source Arduino-based band decoder that reads frequency from CAT and drives antenna switches, amplifier band inputs, and SteppIR controllers.
+
 ---
 
 ## Antennas, Feedlines and RF
