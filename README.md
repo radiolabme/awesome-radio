@@ -122,6 +122,14 @@
 
 ## Digital Modes
 
+- [WSJT-X](https://wsjt.sourceforge.io/wsjtx.html) - The reference implementation of FT8, FT4, MSK144, and other weak-signal modes; standard software for modern DX and contest operating.
+- [JS8Call](https://js8call.com) - Conversational messaging protocol built on the JS8 mode (derived from FT8) for keyboard-to-keyboard QSOs at weak signal levels.
+- [fldigi](http://www.w1hkj.com) - Mature multi-mode digital modem supporting PSK31, RTTY, Olivia, THOR, and dozens of others; integrates with flrig for rig control.
+- [VARA HF](https://www.winlink.org/VARAHF) - High-performance adaptive HF modem used by Winlink and JS8Call; significantly outperforms older PACTOR modems at comparable price.
+- [Winlink](https://www.winlink.org) - Email-over-radio network supporting HF, VHF, and satellite links; widely used for emergency communications and DX email.
+- [JTDX](https://jtdx.tech) - Fork of WSJT-X with enhanced weak signal decoding algorithms; popular for difficult DX paths.
+- [GridTracker](https://gridtracker.org) - Real-time map overlay for WSJT-X showing decoded callsigns, grid squares, and propagation paths.
+
 ---
 
 ## GitHub Projects
