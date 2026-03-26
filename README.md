@@ -57,6 +57,11 @@
 
 ### SteppIR Antennas
 
+- [SteppIR Antennas](https://www.steppir.com) - Manufacturer of motorized, continuously tunable antennas including the BigIR vertical and SDA100 controller.
+- [SDA100 Quick Start Guide](https://www.steppir.com/wp-content/uploads/2019/02/SDA100-Quick-Start-Guide.pdf) - Setup and calibration guide for the SDA100 antenna controller used with BigIR and other SteppIR elements.
+- [SteppIR EHF Interface](https://www.steppir.com/products/sda100/) - Description of the EHF (Extended High Frequency) interface allowing CAT-controlled antenna tuning from logging and contest software.
+- [SteppIR User Group](https://groups.io/g/steppir) - Active operator community covering installation, troubleshooting, automation, and calibration of SteppIR antennas.
+
 ### Multi-Rig Integration and Control
 
 ---
