@@ -65,7 +65,7 @@
 - [SDA100 Serial Protocol Specification (2005)](https://www.wimo.com/media/manuals/STEPPIR/Steppir_Serial-interface-operation.pdf) - Complete low-level protocol document detailing the 11-byte command/response format, frequency encoding, and all Data Out command codes (set, home, calibrate, disable).
 - [Controlling SDA100 from Python](https://www.la1k.no/2019/09/25/controlling-a-steppir-sda-100-controller-from-python/) - Practical protocol walkthrough by LA1K with Python code, byte-level frequency encoding analysis, and worked examples at 9600 baud.
 - [bjorgan/steppir](https://github.com/bjorgan/steppir) - Python library providing a high-level API over the SDA100 Data Out serial port: frequency setting, direction control, homing, and calibration.
-- [DXLab Commander SteppIR Integration](http://www.dxlabsuite.com/dxlabwiki/SteppIRFrequencyTracking) - DXLab wiki covering Commander's secondary CAT port configuration for SteppIR frequency tracking, protocol selection, and baud rate settings.
+- [DXLab Commander SteppIR Integration](https://www.dxlabsuite.com/dxlabwiki/SteppIRFrequencyTracking) - DXLab wiki covering Commander's secondary CAT port configuration for SteppIR frequency tracking, protocol selection, and baud rate settings.
 - [SteppIR User Group](https://groups.io/g/steppir) - Active owner community covering installation, troubleshooting, SDA100 automation, and calibration of all SteppIR antenna models.
 
 ### Multi-Rig Integration and Control
