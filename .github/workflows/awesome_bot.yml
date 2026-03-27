@@ -16,4 +16,4 @@ jobs:
       - name: Run awesome_bot
         uses: dkhamsing/awesome_bot@1.20.0
         with:
-          args: README.md --allow-redirect --allow-dupe --white-list https://awesome.re,https://cubicsdr.com,https://hamradioprep.com,https://www.timesmicrowave.com,https://www.flexradio.com
+          args: README.md --allow-redirect --allow-dupe --white-list https://awesome.re,https://cubicsdr.com,https://hamradioprep.com,https://www.timesmicrowave.com,https://www.flexradio.com,https://www.rtl-sdr.com
