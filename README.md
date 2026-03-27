@@ -69,7 +69,7 @@
 - [flrig](https://sourceforge.net/projects/fldigi/files/flrig/) - Lightweight rig control application from the fldigi suite; pairs with fldigi and supports band/mode/frequency automation.
 - [N1MM+ Logger](https://n1mmwireless.com) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
 - [Logger32](https://www.logger32.net) - Full-featured DX logging application with multi-rig CAT control, cluster integration, and antenna switching relay outputs.
-- [OmniRig](http://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
+- [OmniRig](https://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
 - [Band Decoder MK2](https://github.com/ok1rr/BandDecoderMK2) - Open-source Arduino-based band decoder that reads frequency from CAT and drives antenna switches, amplifier band inputs, and SteppIR controllers.
 
 ---
@@ -86,7 +86,7 @@
 ### Chokes and Common-Mode Current
 
 - [W8JI Choke and Common-Mode Resources](https://www.w8ji.com/common_mode_current.htm) - Tom Rauch's deeply researched pages on common-mode current, choke design, and RF grounding — among the most cited practical references on the subject.
-- [K9YC RFI, Ferrites, and Common Mode Chokes](http://audiosystemsgroup.com/RFI-Ham.pdf) - Jim Brown's comprehensive guide to ferrite materials, choke construction, and common-mode suppression for ham stations.
+- [K9YC RFI, Ferrites, and Common Mode Chokes](https://content-files.shure.com/KnowledgeBaseFiles/troubleshooting-rfi-jim-brown-ham.pdf) - Jim Brown's comprehensive guide to ferrite materials, choke construction, and common-mode suppression for ham stations.
 - [Palomar Engineers Ferrite Toroid Calculator](https://www.palomar-engineers.com/ferrite-toroids/ferrite-toroid-design-calculator/) - Online calculator for choke impedance given core material, winding count, and frequency.
 - [Fair-Rite Ferrite Products](https://www.fair-rite.com) - Primary ferrite core manufacturer; datasheets and material characteristic curves for Mix 31, 43, 61, and 75 used in ham choke construction.
 - [Ugly Balun / Choke Construction](https://www.w8ji.com/ugly_balun.htm) - W8JI's measured analysis of the common "ugly balun" feedline choke showing when it works and when it fails.
@@ -103,7 +103,7 @@
 - [4nec2](https://www.qsl.net/4nec2/) - Free Windows NEC2/NEC4 antenna modeling application with a visual geometry editor and far-field pattern display; the most accessible entry point for numerical antenna modeling.
 - [EZNEC](https://eznec.com) - Roy Lewallen's widely used Windows antenna modeling program based on NEC2; supports up to 500 wires and is standard for most published amateur antenna designs.
 - [OpenEMS](https://www.openems.de) - Open-source finite-difference time-domain (FDTD) electromagnetic field solver; handles complex structures including coax feeds, shields, and PCB antennas beyond NEC's wire-only limitations.
-- [MMANA-GAL](http://gal-ana.de/basicmm/en/) - Free antenna modeling software based on the moment method, popular for its simple interface and good accuracy for wire antennas.
+- [MMANA-GAL](https://hamsoft.ca/pages/mmana-gal.php) - Free antenna modeling software based on the moment method, popular for its simple interface and good accuracy for wire antennas.
 - [Antenna Model](https://www.antennamodel.com) - Commercial NEC-based modeling application with an active developer, good for EZNEC users seeking an alternative with updated NEC4 support.
 
 ---
@@ -124,7 +124,7 @@
 
 - [WSJT-X](https://wsjt.sourceforge.io/wsjtx.html) - The reference implementation of FT8, FT4, MSK144, and other weak-signal modes; standard software for modern DX and contest operating.
 - [JS8Call](https://js8call.com) - Conversational messaging protocol built on the JS8 mode (derived from FT8) for keyboard-to-keyboard QSOs at weak signal levels.
-- [fldigi](http://www.w1hkj.com) - Mature multi-mode digital modem supporting PSK31, RTTY, Olivia, THOR, and dozens of others; integrates with flrig for rig control.
+- [fldigi](https://sourceforge.net/projects/fldigi/) - Mature multi-mode digital modem supporting PSK31, RTTY, Olivia, THOR, and dozens of others; integrates with flrig for rig control.
 - [VARA HF](https://www.winlink.org/VARAHF) - High-performance adaptive HF modem used by Winlink and JS8Call; significantly outperforms older PACTOR modems at comparable price.
 - [Winlink](https://www.winlink.org) - Email-over-radio network supporting HF, VHF, and satellite links; widely used for emergency communications and DX email.
 - [JTDX](https://jtdx.tech) - Fork of WSJT-X with enhanced weak signal decoding algorithms; popular for difficult DX paths.
