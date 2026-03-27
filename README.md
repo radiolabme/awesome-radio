@@ -7,6 +7,7 @@
 - [Station Automation](#station-automation)
   - [Flex 6400M and SmartSDR](#flex-6400m-and-smartsdr)
   - [Elecraft](#elecraft)
+  - [SPE Expert Amplifiers](#spe-expert-amplifiers)
   - [Elecraft Amplifiers and Tuners](#elecraft-amplifiers-and-tuners)
   - [SteppIR Antennas](#steppir-antennas)
   - [Multi-Rig Integration and Control](#multi-rig-integration-and-control)
@@ -30,12 +31,24 @@
 - [FlexRadio Systems](https://www.flexradio.com) - Manufacturer of the Flex 6400M and SmartSDR software-defined radio platform.
 - [FlexRadio Community Forums](https://community.flexradio.com) - Official community forums covering SmartSDR API usage, CAT integration, hardware, and station automation.
 - [SmartSDR for Mac](https://www.flexradio.com/ssdr-for-mac/) - Native macOS client for SmartSDR, with DAX audio routing and CAT support.
+- [nDAX](https://github.com/kc2g-flex-tools/nDAX) - Linux-native PulseAudio audio device for FlexRadio DAX slices, enabling SmartSDR audio integration without Windows or Maestro.
+- [nCAT](https://github.com/kc2g-flex-tools/nCAT) - Exposes a Flex 6xxx radio as a hamlib/rigctld-compatible CAT interface on TCP, allowing any hamlib-aware application to control the radio on Linux.
+- [FlexRadio SmartSDR Group](https://groups.io/g/FlexRadioSmartSDR) - Active community covering SmartSDR operation, peripherals, and third-party software integration including DDUtil and SliceMaster.
 
 ### Elecraft
 
 - [Elecraft](https://www.elecraft.com) - Manufacturer of the K3, KX2, and related accessories; documentation and firmware downloads available.
 - [elecraft-docs](https://github.com/radiolabme/elecraft-docs) - Curated technical documentation, automation notes, and configuration references for Elecraft K3 and KX2 operators.
 - [Elecraft Mailing List Archives](https://mailman.qth.net/pipermail/elecraft/) - Decades of operator experience, modification tips, and troubleshooting in searchable archive form.
+- [Elecraft Group](https://groups.io/g/elecraft) - Active discussion group covering all Elecraft radios including K4, K3S, K3, KX3, and KX2.
+
+### SPE Expert Amplifiers
+
+- [SPE Expert Amplifiers](https://www.spetlc.com) - Manufacturer of the Expert 1.3K-FA solid-state amplifier; firmware downloads, manuals, and support hosted at spetlc.com.
+- [1.3K-FA User Manual (Third Series, Rev. 3.1)](https://www.spetlc.com/images/download/1.3K-FA/User.Manual.EXPERT.1.3K-FA-EN-rev.3.1.Third.Series.pdf) - Full operator manual covering ALC settings, serial CAT interface, band-data connector pinout, and antenna tuner integration.
+- [Application Programmer's Guide](https://www.radioamatore.info/attachments/article/2134/Application-Programmers-Guide-1.3K-2K-1.1.pdf) - Serial protocol reference for automated control of the Expert 1.3K-FA and 2K-FA amplifiers, covering command syntax and status responses.
+- [SPE Expert Amps Group](https://speexpertamps.groups.io/g/main) - Community of Expert amplifier owners covering firmware updates, troubleshooting, station integration, and automation scripts.
+- [SPE Expert with Flex 6400M](https://community.flexradio.com/discussion/7941411/spe-expert-1-3k-fa-amp) - FlexRadio community thread on integrating the 1.3K-FA with SmartSDR, covering CAT interface configuration and band-data setup.
 
 ### Elecraft Amplifiers and Tuners
 
@@ -47,8 +60,13 @@
 ### SteppIR Antennas
 
 - [SteppIR Antennas](https://www.steppir.com) - Manufacturer of motorized, continuously tunable antennas including the BigIR vertical and SDA100 controller.
-- [SteppIR EHF Interface](https://www.steppir.com/products/sda100/) - Description of the EHF (Extended High Frequency) interface allowing CAT-controlled antenna tuning from logging and contest software.
-- [SteppIR User Group](https://groups.io/g/steppir) - Active operator community covering installation, troubleshooting, automation, and calibration of SteppIR antennas.
+- [SteppIR Support Files](https://consumer.steppir.com/support/files/) - Official downloads page for SDA100 firmware, operator guides, and assembly documentation.
+- [SDA100 Serial Interface Document (2021)](https://consumer.steppir.com/wp-content/uploads/2021/05/Updated-Serial-Interface-Document-2021.pdf) - Official serial interface specification covering Data In/Data Out pinout, operating configurations, and radio compatibility table.
+- [SDA100 Serial Protocol Specification (2005)](https://www.wimo.com/media/manuals/STEPPIR/Steppir_Serial-interface-operation.pdf) - Complete low-level protocol document detailing the 11-byte command/response format, frequency encoding, and all Data Out command codes (set, home, calibrate, disable).
+- [Controlling SDA100 from Python](https://www.la1k.no/2019/09/25/controlling-a-steppir-sda-100-controller-from-python/) - Practical protocol walkthrough by LA1K with Python code, byte-level frequency encoding analysis, and worked examples at 9600 baud.
+- [bjorgan/steppir](https://github.com/bjorgan/steppir) - Python library providing a high-level API over the SDA100 Data Out serial port: frequency setting, direction control, homing, and calibration.
+- [DXLab Commander SteppIR Integration](http://www.dxlabsuite.com/dxlabwiki/SteppIRFrequencyTracking) - DXLab wiki covering Commander's secondary CAT port configuration for SteppIR frequency tracking, protocol selection, and baud rate settings.
+- [SteppIR User Group](https://groups.io/g/steppir) - Active owner community covering installation, troubleshooting, SDA100 automation, and calibration of all SteppIR antenna models.
 
 ### Multi-Rig Integration and Control
 
@@ -58,6 +76,9 @@
 - [N1MM+ Logger](https://n1mmwp.hamdocs.com/) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
 - [Logger32](https://www.logger32.net) - Full-featured DX logging application with multi-rig CAT control, cluster integration, and antenna switching relay outputs.
 - [OmniRig](https://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
+- [node-red-contrib-hamlib](https://github.com/stephenhouser/node-red-contrib-hamlib) - Node-RED nodes for Hamlib rig control via rigctld, enabling visual flow-based station automation.
+- [Node-RED Ham Radio Group](https://groups.io/g/nodered-hamradio) - Community for sharing and collaborating on Node-RED flows for ham radio station control and automation.
+- [Software Controlled Ham Radio Group](https://groups.io/g/SoftwareControlledHamRadio) - Broad community covering software-driven ham radio projects including CAT control, station automation, and SDR integration.
 
 ---
 
@@ -138,6 +159,8 @@
 - [LOTW (Logbook of the World)](https://lotw.arrl.org) - ARRL's electronic QSL and award confirmation system; the standard for DXCC, WAS, and most major award tracking.
 - [ClubLog](https://clublog.org) - Web-based log upload and analysis platform with OQRS (online QSL request), DX expedition log search, and propagation statistics.
 - [eQSL](https://eqsl.cc) - Electronic QSL card exchange network accepted for some awards programs; an alternative to paper QSLs with fast confirmations.
+- [N1MM Logger Plus Group](https://groups.io/g/N1MMLoggerPlus) - Official discussion and support group for N1MM Logger Plus contest logging software.
+- [Logger32 Group](https://groups.io/g/hamlogger) - Community support and discussion group for Logger32 freeware logging software.
 
 ---
 
