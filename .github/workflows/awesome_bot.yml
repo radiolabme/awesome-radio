@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run awesome_bot
-        uses: dkhamsing/awesome_bot@v2
+        uses: dkhamsing/awesome_bot@1.20.0
         with:
           args: README.md --allow-redirect --allow-dupe --white-list https://awesome.re
