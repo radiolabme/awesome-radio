@@ -7,7 +7,6 @@
 - [Station Automation](#station-automation)
   - [Flex 6400M and SmartSDR](#flex-6400m-and-smartsdr)
   - [Elecraft](#elecraft)
-  - [SPE Expert Amplifiers](#spe-expert-amplifiers)
   - [Elecraft Amplifiers and Tuners](#elecraft-amplifiers-and-tuners)
   - [SteppIR Antennas](#steppir-antennas)
   - [Multi-Rig Integration and Control](#multi-rig-integration-and-control)
@@ -29,24 +28,14 @@
 ### Flex 6400M and SmartSDR
 
 - [FlexRadio Systems](https://www.flexradio.com) - Manufacturer of the Flex 6400M and SmartSDR software-defined radio platform.
-- [FlexRadio Community Forums](https://community.flexradio.com) - Official community forums covering SmartSDR, API usage, hardware, and station integration.
-- [SmartSDR API Documentation](https://documentation.flexradio.com) - Official REST and TCP API reference for programmatic control of SmartSDR-based radios.
+- [FlexRadio Community Forums](https://community.flexradio.com) - Official community forums covering SmartSDR API usage, CAT integration, hardware, and station automation.
 - [SmartSDR for Mac](https://www.flexradio.com/ssdr-for-mac/) - Native macOS client for SmartSDR, with DAX audio routing and CAT support.
-- [DAX (Digital Audio eXchange)](https://www.flexradio.com/downloads/) - Virtual audio routing layer for SmartSDR enabling integration with logging, digital mode, and audio processing software.
-- [SmartLink](https://www.flexradio.com/smartlink/) - Remote access system allowing full SmartSDR operation over the internet with low latency.
 
 ### Elecraft
 
 - [Elecraft](https://www.elecraft.com) - Manufacturer of the K3, KX2, and related accessories; documentation and firmware downloads available.
 - [elecraft-docs](https://github.com/radiolabme/elecraft-docs) - Curated technical documentation, automation notes, and configuration references for Elecraft K3 and KX2 operators.
 - [Elecraft Mailing List Archives](https://mailman.qth.net/pipermail/elecraft/) - Decades of operator experience, modification tips, and troubleshooting in searchable archive form.
-- [K3 Programmer](https://www.k3programmer.com) - Third-party configuration and band-data management tool for the Elecraft K3 and K3S.
-
-### SPE Expert Amplifiers
-
-- [SPE Expert](https://www.spe-expert.com) - Manufacturer of the Expert 1.3K-FA and related solid-state amplifiers; manuals and firmware updates available.
-- [SPE Expert 1.3K-FA Manual](https://www.spe-expert.com/wp-content/uploads/2020/01/Expert_1.3K-FA_Manual.pdf) - Full operator manual covering serial CAT interface, automation inputs, and band-data connector pinout.
-- [SPE Support Forum](https://www.spe-expert.com/forum/) - Official forum with firmware announcements and operator-contributed automation scripts.
 
 ### Elecraft Amplifiers and Tuners
 
@@ -58,19 +47,17 @@
 ### SteppIR Antennas
 
 - [SteppIR Antennas](https://www.steppir.com) - Manufacturer of motorized, continuously tunable antennas including the BigIR vertical and SDA100 controller.
-- [SDA100 Quick Start Guide](https://www.steppir.com/wp-content/uploads/2019/02/SDA100-Quick-Start-Guide.pdf) - Setup and calibration guide for the SDA100 antenna controller used with BigIR and other SteppIR elements.
 - [SteppIR EHF Interface](https://www.steppir.com/products/sda100/) - Description of the EHF (Extended High Frequency) interface allowing CAT-controlled antenna tuning from logging and contest software.
 - [SteppIR User Group](https://groups.io/g/steppir) - Active operator community covering installation, troubleshooting, automation, and calibration of SteppIR antennas.
 
 ### Multi-Rig Integration and Control
 
 - [Hamlib](https://hamlib.github.io) - Open-source radio control library providing a unified API for dozens of transceivers and rotators; the backbone of most amateur radio automation software.
-- [rigctld](https://manpages.ubuntu.com/manpages/jammy/man8/rigctld.8.html) - Network daemon from Hamlib exposing rig control over TCP; enables multiple applications to share control of one radio simultaneously.
+- [rigctld](https://github.com/Hamlib/Hamlib/wiki/Documentation) - Network daemon from Hamlib exposing rig control over TCP; enables multiple applications to share control of one radio simultaneously.
 - [flrig](https://sourceforge.net/projects/fldigi/files/flrig/) - Lightweight rig control application from the fldigi suite; pairs with fldigi and supports band/mode/frequency automation.
-- [N1MM+ Logger](https://n1mmwireless.com) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
+- [N1MM+ Logger](https://n1mmwp.hamdocs.com/) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
 - [Logger32](https://www.logger32.net) - Full-featured DX logging application with multi-rig CAT control, cluster integration, and antenna switching relay outputs.
 - [OmniRig](https://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
-- [Band Decoder MK2](https://github.com/ok1rr/BandDecoderMK2) - Open-source Arduino-based band decoder that reads frequency from CAT and drives antenna switches, amplifier band inputs, and SteppIR controllers.
 
 ---
 
@@ -78,9 +65,8 @@
 
 ### Verticals and Phased Arrays
 
-- [ON4UN's Low-Band DXing](https://www.qth.com/on4un/) - The definitive reference for low-band vertical and phased array design, modeling, and installation.
 - [DX Engineering Phased Array Systems](https://www.dxengineering.com/techarticles/DXE-TECH-PHASED.pdf) - Technical overview of two-element phased vertical arrays with practical construction details.
-- [4O3A Antenna Systems](https://www.4o3a.com) - Operator-authored resources on high-performance vertical and beam antenna systems with real-world measurement data.
+- [4O3A Antenna Systems](https://4o3a.com) - Operator-authored resources on high-performance vertical and beam antenna systems with real-world measurement data.
 - [The ARRL Antenna Book](https://www.arrl.org/arrl-antenna-book) - Comprehensive reference covering vertical, wire, and phased array antennas with modeling examples.
 
 ### Chokes and Common-Mode Current
@@ -89,7 +75,6 @@
 - [K9YC RFI, Ferrites, and Common Mode Chokes](https://content-files.shure.com/KnowledgeBaseFiles/troubleshooting-rfi-jim-brown-ham.pdf) - Jim Brown's comprehensive guide to ferrite materials, choke construction, and common-mode suppression for ham stations.
 - [Palomar Engineers Ferrite Toroid Calculator](https://www.palomar-engineers.com/ferrite-toroids/ferrite-toroid-design-calculator/) - Online calculator for choke impedance given core material, winding count, and frequency.
 - [Fair-Rite Ferrite Products](https://www.fair-rite.com) - Primary ferrite core manufacturer; datasheets and material characteristic curves for Mix 31, 43, 61, and 75 used in ham choke construction.
-- [Ugly Balun / Choke Construction](https://www.w8ji.com/ugly_balun.htm) - W8JI's measured analysis of the common "ugly balun" feedline choke showing when it works and when it fails.
 
 ### Feedline Selection and Loss
 
@@ -136,7 +121,6 @@
 
 - [Hamlib](https://github.com/Hamlib/Hamlib) - The standard open-source library for rig and rotator control; supports hundreds of radios via a unified API used by nearly every ham automation tool.
 - [flrig](https://github.com/w1hkj/flrig) - Rig control front-end from the fldigi suite; lightweight, cross-platform, and paired tightly with fldigi for digital mode use.
-- [Band Decoder MK2](https://github.com/ok1rr/BandDecoderMK2) - Arduino-based band decoder reading CAT frequency and driving antenna switch, amp band-data, and SteppIR controller outputs.
 - [SDRangel](https://github.com/f4exb/sdrangel) - Full-featured SDR transceiver application with Flex SmartSDR protocol support and an extensive signal processing plugin ecosystem.
 - [SoapySDR](https://github.com/pothosware/SoapySDR) - Hardware abstraction layer enabling SDR software to support many different hardware backends through a common API.
 - [OpenEMS](https://github.com/thliebig/openEMS) - FDTD electromagnetic field solver for antenna and RF structure simulation beyond NEC's wire-antenna scope.
@@ -147,7 +131,7 @@
 
 ## Logging and Contesting
 
-- [N1MM+ Logger](https://n1mmwireless.com) - The most widely used Windows contest logging application; supports SO2R, deep CAT integration, and band-data relay for amplifier and antenna automation.
+- [N1MM+ Logger](https://n1mmwp.hamdocs.com/) - The most widely used Windows contest logging application; supports SO2R, deep CAT integration, and band-data relay for amplifier and antenna automation.
 - [Logger32](https://www.logger32.net) - Feature-rich DX logging application with multi-rig CAT control, DX cluster integration, and relay-based antenna switching outputs.
 - [DXLab Suite](https://www.dxlabsuite.com) - Integrated suite of Windows applications covering logging, propagation, DX spotting, rig control, and antenna rotator management.
 - [Log4OM](https://www.log4om.com) - Modern cross-platform amateur radio logging application with built-in DX cluster, LOTW/eQSL integration, and CAT rig control.
