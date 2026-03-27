@@ -169,6 +169,7 @@
 - [HamStudy](https://hamstudy.org) - Free online question pool study tool for Technician, General, and Amateur Extra exams with spaced-repetition flashcard mode.
 - [ARRL](https://www.arrl.org) - The American Radio Relay League; publishes the FCC question pools, exam prep books, and the ARRL Handbook — the field's primary technical reference.
 - [FCC ULS (Universal Licensing System)](https://wireless.fcc.gov/uls/) - Official FCC database for license lookup, renewal, and application; required stop for all US amateur operators.
+- [Fast Track Ham Radio (AF7KB)](https://fasttrackham.com) - Michael Burnette's license preparation series covering Technician, General, and Extra class with coordinated books, audio, video, and practice exams.
 - [Gordon West Training](https://gordonwestradioschool.com) - Audio and book study materials for all license classes, widely recommended for structured exam preparation.
 - [Ham Radio Prep](https://hamradioprep.com) - Modern online course platform with video instruction and practice exams for all three US license classes.
 - [QRZ.com](https://www.qrz.com) - Callsign lookup database, logbook, forums, and a comprehensive learning center with license exam practice tests.
