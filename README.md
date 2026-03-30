@@ -38,7 +38,7 @@
 ### Elecraft
 
 - [Elecraft](https://www.elecraft.com) - Manufacturer of the K3, KX2, and related accessories; documentation and firmware downloads available.
-- [elecraft-docs](https://github.com/radiolabme/elecraft-docs) - Curated technical documentation, automation notes, and configuration references for Elecraft K3 and KX2 operators.
+- [elecraft-docs](https://github.com/radiolabme/elecraft-docs) - Structured reference site covering K3 and KX2 CAT programming, serial connection setup, KPA500 and KAT500 integration, and station configuration.
 - [Elecraft Mailing List Archives](https://mailman.qth.net/pipermail/elecraft/) - Decades of operator experience, modification tips, and troubleshooting in searchable archive form.
 - [Elecraft Group](https://groups.io/g/elecraft) - Active discussion group covering all Elecraft radios including K4, K3S, K3, KX3, and KX2.
 
@@ -73,8 +73,6 @@
 - [Hamlib](https://hamlib.github.io) - Open-source radio control library providing a unified API for dozens of transceivers and rotators; the backbone of most amateur radio automation software.
 - [rigctld](https://github.com/Hamlib/Hamlib/wiki/Documentation) - Network daemon from Hamlib exposing rig control over TCP; enables multiple applications to share control of one radio simultaneously.
 - [flrig](https://sourceforge.net/projects/fldigi/files/flrig/) - Lightweight rig control application from the fldigi suite; pairs with fldigi and supports band/mode/frequency automation.
-- [N1MM+ Logger](https://n1mmwp.hamdocs.com/) - The dominant Windows contest logging application with deep CAT integration, SO2R support, and band-data relay output for amplifier and antenna switching.
-- [Logger32](https://www.logger32.net) - Full-featured DX logging application with multi-rig CAT control, cluster integration, and antenna switching relay outputs.
 - [OmniRig](https://www.dxatlas.com/OmniRig/) - Windows COM-based rig control engine that allows multiple applications to share a single CAT connection to a transceiver.
 - [node-red-contrib-hamlib](https://github.com/stephenhouser/node-red-contrib-hamlib) - Node-RED nodes for Hamlib rig control via rigctld, enabling visual flow-based station automation.
 - [Node-RED Ham Radio Group](https://groups.io/g/nodered-hamradio) - Community for sharing and collaborating on Node-RED flows for ham radio station control and automation.
@@ -142,8 +140,6 @@
 
 - [Hamlib](https://github.com/Hamlib/Hamlib) - The standard open-source library for rig and rotator control; supports hundreds of radios via a unified API used by nearly every ham automation tool.
 - [flrig](https://github.com/w1hkj/flrig) - Rig control front-end from the fldigi suite; lightweight, cross-platform, and paired tightly with fldigi for digital mode use.
-- [SDRangel](https://github.com/f4exb/sdrangel) - Full-featured SDR transceiver application with Flex SmartSDR protocol support and an extensive signal processing plugin ecosystem.
-- [SoapySDR](https://github.com/pothosware/SoapySDR) - Hardware abstraction layer enabling SDR software to support many different hardware backends through a common API.
 - [OpenEMS](https://github.com/thliebig/openEMS) - FDTD electromagnetic field solver for antenna and RF structure simulation beyond NEC's wire-antenna scope.
 - [pyhamtools](https://github.com/dh1tw/pyhamtools) - Python library for callsign lookup, log analysis, grid square calculations, and other common ham radio data operations.
 - [ham2mon](https://github.com/madengr/ham2mon) - SDR-based multi-channel scanner and recorder for monitoring amateur and public safety bands.
