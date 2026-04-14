@@ -112,8 +112,15 @@ jobs:
 
       - name: Open issue for dead links
         if: steps.process.outputs.found == 'true'
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: "Dead links detected — ${{ github.run_id }}"
-          content-filepath: issue-body.md
-          labels: maintenance
+        run: |
+          existing=$(gh issue list --label maintenance --state open --search "Dead links detected" --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            echo "Issue #$existing already open — skipping"
+          else
+            gh issue create \
+              --title "Dead links detected" \
+              --body-file issue-body.md \
+              --label maintenance
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
