@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write
       pull-requests: write
 
     steps:
@@ -41,7 +40,6 @@ jobs:
         run: |
           python3 << 'EOF'
           import json, os, re, sys
-          from datetime import date
 
           with open('lychee-out.json') as f:
               data = json.load(f)
@@ -70,25 +68,18 @@ jobs:
               with open('README.md', 'w') as f:
                   f.write(content)
 
-          # Write issue body
-          today = date.today().isoformat()
-          lines = [
-              f'Scheduled link check run on {today} detected {len(failed)} dead URL(s).',
-              '',
-          ]
-          if removed:
-              lines += [
-                  f'Hyperlinks for {len(removed)} URL(s) have been removed from `README.md` in the associated PR. '
-                  'Review each entry and either restore it with a working URL or remove the entry '
-                  'entirely to stay compliant with the sindresorhus awesome list requirements.',
-                  '',
-              ]
-          lines += ['## Dead Links', '']
+          # Write PR body
+          lines = ['## Dead Links', '']
           for url, status in failed:
-              note = ' — hyperlink removed' if any(u == url for u, _ in removed) else ''
+              note = ' — hyperlink removed' if any(u == url for u, _ in removed) else ' — not found in README'
               lines.append(f'- `{url}` ({status}){note}')
+          lines += [
+              '',
+              'Review each removed entry and either restore it with a working URL or delete the entry entirely '
+              'to stay compliant with sindresorhus awesome list requirements.',
+          ]
 
-          with open('issue-body.md', 'w') as f:
+          with open('pr-body.md', 'w') as f:
               f.write('\n'.join(lines) + '\n')
 
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
@@ -104,23 +95,6 @@ jobs:
           branch: fix/dead-links
           delete-branch: true
           title: "Remove dead hyperlinks"
-          body: |
-            Scheduled link check found dead URLs. Hyperlinks have been removed from `README.md` — review each entry and either update it with a working URL or remove the entry entirely to stay compliant with sindresorhus awesome list requirements.
-
-            See the associated issue for the full list of dead links and their HTTP status.
+          body-path: pr-body.md
           labels: maintenance
 
-      - name: Open issue for dead links
-        if: steps.process.outputs.found == 'true'
-        run: |
-          existing=$(gh issue list --label maintenance --state open --search "Dead links detected" --json number --jq '.[0].number')
-          if [ -n "$existing" ]; then
-            echo "Issue #$existing already open — skipping"
-          else
-            gh issue create \
-              --title "Dead links detected" \
-              --body-file issue-body.md \
-              --label maintenance
-          fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
