@@ -1,0 +1,119 @@
+name: Link Health Check
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'  # Monthly on the 1st at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --format json
+            --accept 200,204,301,302,429
+            --exclude https://awesome\.re
+            --exclude https://cubicsdr\.com
+            --exclude https://hamradioprep\.com
+            --exclude https://www\.timesmicrowave\.com
+            --exclude https://www\.flexradio\.com
+            --exclude https://www\.rtl-sdr\.com
+            README.md
+          output: lychee-out.json
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Strip dead hyperlinks and generate report
+        id: process
+        run: |
+          python3 << 'EOF'
+          import json, os, re, sys
+          from datetime import date
+
+          with open('lychee-out.json') as f:
+              data = json.load(f)
+
+          # Collect all failed URLs across all checked files
+          failed = []
+          for entries in data.get('fail_map', {}).values():
+              for entry in entries:
+                  failed.append((entry['url'], entry.get('status', {}).get('text', 'unknown')))
+
+          if not failed:
+              print("No dead links found.")
+              sys.exit(0)
+
+          with open('README.md') as f:
+              content = f.read()
+
+          removed = []
+          for url, status in failed:
+              patched = re.sub(r'\[([^\]]+)\]\(' + re.escape(url) + r'\)', r'\1', content)
+              if patched != content:
+                  content = patched
+                  removed.append((url, status))
+
+          if removed:
+              with open('README.md', 'w') as f:
+                  f.write(content)
+
+          # Write issue body
+          today = date.today().isoformat()
+          lines = [
+              f'Scheduled link check run on {today} detected {len(failed)} dead URL(s).',
+              '',
+          ]
+          if removed:
+              lines += [
+                  f'Hyperlinks for {len(removed)} URL(s) have been removed from `README.md` in the associated PR. '
+                  'Review each entry and either restore it with a working URL or remove the entry '
+                  'entirely to stay compliant with the sindresorhus awesome list requirements.',
+                  '',
+              ]
+          lines += ['## Dead Links', '']
+          for url, status in failed:
+              note = ' — hyperlink removed' if any(u == url for u, _ in removed) else ''
+              lines.append(f'- `{url}` ({status}){note}')
+
+          with open('issue-body.md', 'w') as f:
+              f.write('\n'.join(lines) + '\n')
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write('found=true\n')
+          EOF
+
+      - name: Open PR to remove dead hyperlinks
+        if: steps.process.outputs.found == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Remove dead hyperlinks found by monthly link check"
+          branch: fix/dead-links
+          delete-branch: true
+          title: "Remove dead hyperlinks"
+          body: |
+            Scheduled link check found dead URLs. Hyperlinks have been removed from `README.md` — review each entry and either update it with a working URL or remove the entry entirely to stay compliant with sindresorhus awesome list requirements.
+
+            See the associated issue for the full list of dead links and their HTTP status.
+          labels: maintenance
+
+      - name: Open issue for dead links
+        if: steps.process.outputs.found == 'true'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Dead links detected — ${{ github.run_id }}"
+          content-filepath: issue-body.md
+          labels: maintenance
